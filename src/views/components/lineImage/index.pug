@@ -1,0 +1,24 @@
+mixin component-lineImage(pairs, classConteiner)
+    .component-lineImage(class=classConteiner)
+        each pair in pairs
+            a.btn_ga_click(
+                class=pair.class
+                href=pair.link, 
+                rel="noopener noreferrer", 
+                onclick="sendClickEventGA(this)"
+            )   
+                picture
+                    if pair['imageMob'] && pair['imageMob'] !== ''
+                        source(media="(max-width: 768px)", srcset=pair['imageMob'])
+                    source(media="(min-width: 769px)", srcset=pair['imageDesk'])
+                    img.img_ga_view(
+                        src=(pair['imageMob'] && pair['imageMob'] !== '' ? pair['imageMob'] : pair['imageDesk']),
+                        alt=pair.alt,
+                        class='image',
+                        data-creative=pair.dataCreative,
+                        data-name=pair.dataName
+                    )
+                p.textImg !{pair.textImg}
+                if pair.button
+                    button.btnDefault(tabindex='-1')
+                        p conferir

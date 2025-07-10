@@ -1,0 +1,142 @@
+include views/imports
+
+doctype html
+html(lang="pt-br")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Estrutura Dafiti
+        link(rel="stylesheet" href="styles/main.css")
+        //- link(rel="stylesheet", href="external/style.css")
+
+    body(style="box-sizing: border-box; margin: 0; padding: 0;")
+        .dafitiStructure
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+            +component-headerLp([
+                {
+                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_58_09_Group_26653896.svg', 
+                    alt: 'Logotipo Aramis',
+                    bgColor: '#000000'
+                }
+            ])
+
+            .maxContent
+                +component-lineImage([
+                    {
+                        class: 'tipoA',
+                        link: 'https://www.dafiti.com.br/promocao/masculino/selecao-aramis/',
+                        imageDesk: 'https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_40_desk-1920x640.png',
+                        imageMob: 'https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_45_Group_26653896.png',
+                        alt: 'Banner Principal - especial Aramis',
+                        dataCreative: 'LojaEspecialAramis_Feature',
+                        dataName: 'num-Especial-Aramis',
+                        button: true
+                    }
+                ])
+
+                .boxMenor
+                    +component-lineImage([
+                        {
+                            class: 'tipoB',
+                            link: 'https://www.dafiti.com.br/promocao/masculino/selecao-camisas-aramis/',
+                            imageDesk: 'https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_43_Group_26653895.png',
+                            imageMob: '',
+                            alt: 'Banner',
+                            dataCreative: 'LojaEspecialAramis_Categorias',
+                            dataName: 'num-camisas-Aramis',
+                            textImg: 'camisas'
+                        },
+                        {
+                            class: 'tipoB',
+                            link: 'https://www.dafiti.com.br/promocao/masculino/selecao-polos-aramis/',
+                            imageDesk: 'https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_25_acessórios.png',
+                            imageMob: '',
+                            alt: 'Banner',
+                            dataCreative: 'LojaEspecialAramis_Categorias',
+                            dataName: 'num-polos-Aramis',
+                            textImg: 'polos'
+                        },
+                    ], 'lineImageB boxMenorA')
+
+                p.textCenter(tabindex="0") conheça nossas <b>categorias</b>
+                +component-lineImage([
+                    {
+                        class: 'tipoC',
+                        link: 'https://www.dafiti.com.br/promocao/masculino/selecao-camisetas-aramis/',
+                        imageDesk: 'https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_23_2025-03-11_Santa_Lolla_Dia_das_Mães19557.png',
+                        imageMob: '',
+                        alt: 'Banner',
+                        dataCreative: 'LojaEspecialAramis_Categorias',
+                        dataName: 'num-camisetas-Aramis',
+                        textImg: 'camisetas'
+                    },
+                    {
+                        class: 'tipoC',
+                        link: 'https://www.dafiti.com.br/promocao/masculino/selecao-calcas-aramis/',
+                        imageDesk: 'https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_54_tenis.png',
+                        imageMob: '',
+                        alt: 'Banner',
+                        dataCreative: 'LojaEspecialAramis_Categorias',
+                        dataName: 'num-calcas-Aramis',
+                        textImg: 'calças'
+                    },
+                    {
+                        class: 'tipoC',
+                        link: 'https://www.dafiti.com.br/promocao/masculino/selecao-calcados-aramis/',
+                        imageDesk: 'https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_48_rasteiras.png',
+                        imageMob: '',
+                        alt: 'Banner',
+                        dataCreative: 'LojaEspecialAramis_Categorias',
+                        dataName: 'num-calcados-Aramis',
+                        textImg: 'calçados'
+                    },
+                    {
+                        class: 'tipoC',
+                        link: 'https://www.dafiti.com.br/promocao/masculino/selecao-bermudas-aramis/',
+                        imageDesk: 'https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_52_scarpins.png',
+                        imageMob: '',
+                        alt: 'Banner',
+                        dataCreative: 'LojaEspecialAramis_Categorias',
+                        dataName: 'num-bermudas-Aramis',
+                        textImg: 'bermudas'
+                    },
+                    {
+                        class: 'tipoC',
+                        link: 'https://www.dafiti.com.br/promocao/masculino/selecao-acessorios-aramis/',
+                        imageDesk: 'https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_50_sandalias1.png',
+                        imageMob: '',
+                        alt: 'Banner',
+                        dataCreative: 'LojaEspecialAramis_Categorias',
+                        dataName: 'num-acessorios-Aramis',
+                        textImg: 'acessórios'
+                    },
+                ], 'boxMenorB')
+
+    //- p.textCenter(tabindex="0") compre <b>por estilo</b>
+    //- .boxGrid
+        a.link.link1(href="") 
+            img.img_ga_view(src="https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_30_D4P_NOVO_792x800_2.png", alt="Banner" data-creative="LojaEspecialAramis_Estilo" data-name="num-wellness-Aramis")
+            p.text <b>wellness</b>
+            button.btnDefault(tabindex='-1')
+                p conferir
+        a.link.link2(href="") 
+            img.img_ga_view(src="https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_35_D4P_NOVO_1112x800_2.png", alt="Banner" data-creative="LojaEspecialAramis_Estilo" data-name="num-alfaiateria-Aramis")
+            p.text <b>alfaiateria</b>
+            button.btnDefault(tabindex='-1')
+                p conferir
+        a.link.link3(href="") 
+            img.img_ga_view(src="https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_37_D4P_NOVO_1112x800.png", alt="Banner" data-creative="LojaEspecialAramis_Estilo" data-name="num-casual-Aramis")
+            p.text <b>casual</b>
+            button.btnDefault(tabindex='-1')
+                p conferir
+        a.link.link4(href="") 
+            img.img_ga_view(src="https://dafitistatic.dafiti.com.br/cms/loja-aramis/2025_07_10_10_50_32_D4P_NOVO_792x800.png", alt="Banner" data-creative="LojaEspecialAramis_Estilo" data-name="num-outdoor-Aramis")
+            p.text <b>outdoor</b>
+            button.btnDefault(tabindex='-1')
+                p conferir
+
+    //- script(src="external/scripts.js")
+    script(src="js/main.js")

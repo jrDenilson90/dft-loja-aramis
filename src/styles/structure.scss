@@ -1,0 +1,20 @@
+.dafitiStructure * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+.dafitiStructure {
+    font-size: 62.5%;
+    padding-bottom: .5em;
+    margin-bottom: 3em;
+}
+
+.dafitiStructure .maxContent {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    box-shadow: 0em -3em 6em -3em rgba(0, 0, 0, 0.1);
+}

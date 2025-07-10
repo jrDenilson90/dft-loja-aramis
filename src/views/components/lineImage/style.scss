@@ -1,0 +1,160 @@
+@use '../styles/variables' as *;
+
+.component-lineImage {
+    width: 100%;
+    display: flex;
+    gap: .5em;
+    position: relative;
+
+    &.boxMenorA,
+    &.boxMenorB {
+        width: 85%;
+        margin: 0 auto;
+        padding: 1.5em 0 0;
+    }
+    &.boxMenorB {
+        padding: 0;
+    }
+
+    @media (max-width: $tablet-size) {
+        overflow: auto;
+        &.boxMenorB {
+            width: 100%;
+            padding: 0 .5em;
+        }
+        &.lineImageB {
+            flex-wrap: wrap;
+        }
+    }
+
+    a {
+        width: 100%;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+
+        @media (max-width: $tablet-size) {
+            min-width: 38%;
+        }
+
+        @media (max-width: $mobile-size) {
+            min-width: 65%;
+        }
+
+        picture {
+            width: 100%;
+        }
+
+        img {
+            transition-duration: .3s;
+            display: block;
+            width: 100%;
+        }
+
+        &.tipoA {
+            display: flex;
+            justify-content: center;
+            &:hover {
+                .btnDefault {
+                    background-color: #fff;
+                    p {
+                        color: #000;
+                    }
+                }
+            }
+
+            .btnDefault {
+                top: 58%;
+
+                @media (max-width: $tablet-size) {
+                    top: 42%;
+                    left: 15vw;
+                }
+            }
+        }
+
+        &.tipoB {
+            border-radius: 4em;
+            filter: grayscale(100%);
+            transition-duration: .3s;
+
+            &:hover {
+                filter: grayscale(0);
+            }
+
+            @media (max-width: $notebook-size) {
+                border-radius: 3em;
+            }
+
+            @media (max-width: $tablet-size) {
+                border-radius: 4em;
+                min-width: 100%;
+            }
+
+            @media (max-width: $mobile-size) {
+                border-radius: 2em;
+            }
+
+            .textImg {
+                color: #fff;
+                position: absolute;
+                font-weight: 100;
+                font-size: 3em;
+                bottom: 1.2em;
+                left: 1.5em;
+                @media (max-width: $notebook-size) {
+                    font-size: 2.5em;
+                }
+                @media (max-width: $tablet-size) {
+                    font-size: 4.5vw;
+                    bottom: 6.5vw;
+                    left: 5.5vw;
+                }
+            }
+        }
+
+        &.tipoC {
+            text-decoration: none;
+            border-radius: 2em;
+            // border-radius: 1.2vw;
+            @media (max-width: $notebook-size) {
+                border-radius: 1.5em;
+            }
+            @media (max-width: $tablet-size) {
+                border-radius: 3vw 3vw;
+            }
+
+            .textImg {
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                background-color: #0007;
+                text-align: center;
+                font-size: 2.8em;
+                font-weight: 100;
+                color: #fff;
+                backdrop-filter: blur(.2em);
+                transition-duration: .3s;
+                @media (max-width: $notebook-size) {
+                    font-size: 1.5vw;
+                }
+                @media (max-width: $tablet-size) {
+                    font-size: 3.5vw;
+                    border-radius: 0 0 3vw 3vw;
+                    overflow: hidden;
+                }
+            }
+
+            &:hover {
+                .textImg {
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.component-lineImage+.component-lineImage {
+    margin: .5em 0 0;
+}
