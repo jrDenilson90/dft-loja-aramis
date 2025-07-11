@@ -64,11 +64,13 @@
             }
 
             .btnDefault {
-                top: 58%;
+                top: 63%;
+                right: 31%;
 
                 @media (max-width: $tablet-size) {
-                    top: 42%;
-                    left: 15vw;
+                    top: 88%;
+                    right: initial;
+                    left: 8vw;
                 }
             }
         }
@@ -110,6 +112,9 @@
                     bottom: 6.5vw;
                     left: 5.5vw;
                 }
+                @media (max-width: $mobile-size) {
+                    font-size: 5.5vw;
+                }
             }
         }
 
@@ -139,9 +144,12 @@
                     font-size: 1.5vw;
                 }
                 @media (max-width: $tablet-size) {
-                    font-size: 3.5vw;
+                    font-size: 4vw;
                     border-radius: 0 0 3vw 3vw;
                     overflow: hidden;
+                }
+                @media (max-width: $mobile-size) {
+                    font-size: 5.5vw;
                 }
             }
 

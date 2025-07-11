@@ -31,12 +31,12 @@
     pointer-events: none;
     transition-duration: .3s;
     p {
-        font-size: 1em;
+        font-size: 1.2em;
         padding: .3em 1.6em;
         color: #fff;
 
         @media (max-width: $notebook-size) {
-            font-size: .8em;
+            font-size: .9em;
             padding: .3em 1.4em;
         }
 
